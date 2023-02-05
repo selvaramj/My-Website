@@ -1,0 +1,66 @@
+.portfolio-wrapper {
+  margin: 0.5rem;
+  display: flex;
+  padding: 0.5rem;
+}
+.portfolio-title {
+  border-left: 10px solid darkgoldenrod;
+}
+.portflio-title--text {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: darkgoldenrod;
+  opacity: 0.5;
+  color: white;
+  width: 90%;
+}
+.portfolio-introduction {
+  width: 60%;
+  text-align: left;
+}
+.portfolio-image {
+  width: 40%;
+}
+.right-arrow-icon {
+  display: inline-block;
+  transform: rotate(224deg);
+  font-size: initial;
+}
+
+.portfolio-introduction,
+.portfolio-image {
+  padding: 0.5rem;
+  align-self: center;
+}
+.portfolio-role,
+.my-name {
+  color: darkgoldenrod;
+}
+
+.portfolio-wrapper img {
+  border: 5px solid darkgoldenrod;
+  border-radius: 24px;
+  height: 300px;
+}
+@media screen and (max-width: 840px) {
+  .portfolio-wrapper img {
+    /* height: 250px; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio-wrapper {
+    flex-direction: column;
+  }
+  .portfolio-introduction,
+  .portfolio-image {
+    margin: auto;
+    width: 100%;
+  }
+
+  .portfolio-wrapper img {
+    height: 250px;
+  }
+}
